@@ -5,167 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dowon Song, postdoctoral researcher in programming languages and software engineering at Korea University.">
     <title>Dowon Song</title>
-    <link rel="preload" href="assets/profile.jpg" as="image">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav" aria-label="Primary navigation">
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-media" aria-hidden="true">
-          <img src="assets/profile.jpg" alt="">
-        </div>
-        <div class="hero-copy">
-          <p class="eyebrow">Postdoctoral Researcher</p>
-          <h1>Dowon Song <span lang="ko">(송도원)</span></h1>
-          <p class="affiliation">
-            Department of Computer Science and Engineering · Korea University
-          </p>
-          <p class="summary">
-            My research focuses on automated software debugging by leveraging program analysis and program synthesis. I build techniques for finding, explaining, and repairing software defects, with recent work on semantics-aware overfitting patch detection for automated program repair.
-          </p>
-          <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="assets/CV/cv_dowon_song.pdf" target="_blank" rel="noopener">CV</a>
-            <a class="button primary" href="#publications">Publications</a>
-            <a class="button" href="https://prl.korea.ac.kr/members/dowon-song/" target="_blank" rel="noopener">Lab Profile</a>
-            <a class="button" href="https://scholar.google.com/scholar?q=Dowon+Song+Korea+University" target="_blank" rel="noopener">Google Scholar</a>
-          </div>
-        </div>
+    <main>
+      <section id="about" class="profile">
+        <img src="assets/profile.jpg" alt="Dowon Song" class="portrait">
+        <h1>Dowon Song <span lang="ko">(송도원)</span></h1>
+        <p>
+          Postdoctoral Researcher<br>
+          <a href="https://cs.korea.ac.kr" target="_blank" rel="noopener">Department of Computer Science and Engineering</a>,
+          <a href="https://korea.ac.kr" target="_blank" rel="noopener">Korea University</a>
+        </p>
+        <p class="links">
+          <a href="assets/CV/cv_dowon_song.pdf" target="_blank" rel="noopener">[CV]</a>
+          <a href="https://scholar.google.com/scholar?q=Dowon+Song+Korea+University" target="_blank" rel="noopener">[Google Scholar]</a>
+          <a href="https://prl.korea.ac.kr/members/dowon-song/" target="_blank" rel="noopener">[Lab Profile]</a>
+        </p>
+
+        <h2>About Me</h2>
+        <p>
+          I am a postdoctoral researcher at Korea University. My research focuses on automated software debugging by leveraging program analysis and program synthesis.
+        </p>
       </section>
 
-      <section id="research" class="section two-column">
-        <div>
-          <p class="section-kicker">Research</p>
-          <h2>Reliable software through semantics-aware automation</h2>
-        </div>
-        <div class="prose">
-          <p>
-            I study automated software debugging techniques grounded in programming languages, program analysis, and program synthesis.
-          </p>
-          <ul class="interest-list">
-            <li>
-              <strong>Automated program repair</strong>
-              <span>Detecting overfitting patches and improving the reliability of generated fixes.</span>
-            </li>
-            <li>
-              <strong>Feedback for programming assignments</strong>
-              <span>Generating useful, context-aware feedback for student programs.</span>
-            </li>
-            <li>
-              <strong>Semantic bug detection</strong>
-              <span>Finding logical errors in functional programs with automatically generated counterexamples.</span>
-            </li>
-          </ul>
-        </div>
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Automated program repair and overfitting patch detection</li>
+          <li>Program analysis and program synthesis for software debugging</li>
+          <li>Feedback generation and logical-error detection for programming assignments</li>
+        </ul>
       </section>
 
-      <section id="publications" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Selected Publications</p>
-          <h2>Publications</h2>
-        </div>
-
-        <ol class="publication-list">
-          <li class="publication">
-            <div class="pub-year">2025</div>
-            <div class="pub-body">
-              <h3>Enhancing APR with PRISM: A Semantic-Based Approach to Overfitting Patch Detection</h3>
-              <p><strong>Dowon Song</strong> and Hakjoo Oh</p>
-              <p>OOPSLA 2025: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications</p>
-              <div class="pub-links">
-                <a href="https://prl.korea.ac.kr/papers/oopsla25prism.pdf" target="_blank" rel="noopener">PDF</a>
-                <a href="https://2025.splashcon.org/track/OOPSLA" target="_blank" rel="noopener">Venue</a>
-              </div>
-            </div>
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            Integrated M.S./Ph.D. in Computer Science, Korea University (2018.03 - 2026.02)<br>
+            Advisor: Prof. <a href="https://prl.korea.ac.kr/~pronto/home/" target="_blank" rel="noopener">Hakjoo Oh</a>
           </li>
-
-          <li class="publication">
-            <div class="pub-year">2021</div>
-            <div class="pub-body">
-              <h3>Context-Aware and Data-Driven Feedback Generation for Programming Assignments</h3>
-              <p><strong>Dowon Song</strong>, Woosuk Lee, and Hakjoo Oh</p>
-              <p>ESEC/FSE 2021: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</p>
-              <div class="pub-links">
-                <a href="https://prl.korea.ac.kr/papers/fse21.pdf" target="_blank" rel="noopener">PDF</a>
-                <a href="https://github.com/kupl/LearnML" target="_blank" rel="noopener">Artifact</a>
-                <a href="https://2021.esec-fse.org/" target="_blank" rel="noopener">Venue</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="publication">
-            <div class="pub-year">2019</div>
-            <div class="pub-body">
-              <h3>Automatic and Scalable Detection of Logical Errors in Functional Programming Assignments</h3>
-              <p><strong>Dowon Song</strong>, Myungho Lee, and Hakjoo Oh</p>
-              <p>OOPSLA 2019: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications</p>
-              <div class="pub-links">
-                <a href="https://prl.korea.ac.kr/papers/oopsla19.pdf" target="_blank" rel="noopener">PDF</a>
-                <a href="https://github.com/kupl/TestML" target="_blank" rel="noopener">Artifact</a>
-                <a href="https://conf.researchr.org/track/splash-2019/splash-2019-oopsla" target="_blank" rel="noopener">Venue</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="publication">
-            <div class="pub-year">2018</div>
-            <div class="pub-body">
-              <h3>Automatic Diagnosis and Correction of Logical Errors for Functional Programming Assignments</h3>
-              <p>Junho Lee, <strong>Dowon Song</strong>, Sunbeom So, and Hakjoo Oh</p>
-              <p>OOPSLA 2018: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications</p>
-              <div class="pub-links">
-                <a href="https://dl.acm.org/citation.cfm?id=3276528" target="_blank" rel="noopener">Publication</a>
-                <a href="https://prl.korea.ac.kr/papers/oopsla18-fixml.pdf" target="_blank" rel="noopener">PDF</a>
-                <a href="https://github.com/kupl/FixML" target="_blank" rel="noopener">Artifact</a>
-              </div>
-            </div>
-          </li>
-        </ol>
+          <li>B.S. in Computer Science, Korea University (2014.03 - 2018.02)</li>
+        </ul>
       </section>
 
-      <section id="experience" class="section split-band">
-        <div>
-          <p class="section-kicker">Background</p>
-          <h2>Experience & Education</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <span>2026.04 - Present</span>
-            <h3>Postdoctoral Researcher</h3>
-            <p>Korea University</p>
-          </article>
-          <article>
-            <span>2018.03 - 2026.02</span>
-            <h3>Integrated M.S./Ph.D. in Computer Science</h3>
-            <p>Korea University · Advisor: Prof. Hakjoo Oh</p>
-          </article>
-          <article>
-            <span>2014.03 - 2018.02</span>
-            <h3>B.S. in Computer Science</h3>
-            <p>Korea University</p>
-          </article>
-        </div>
+      <section id="publications">
+        <h2>Publications</h2>
+        <p>
+          I have published research papers at top-tier conferences in programming languages and software engineering.
+        </p>
+        <ul class="publications">
+          <li>
+            <strong>Enhancing APR with PRISM: A Semantic-Based Approach to Overfitting Patch Detection.</strong><br>
+            <u>Dowon Song</u> and Hakjoo Oh.<br>
+            OOPSLA 2025: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications.
+            [<a href="https://prl.korea.ac.kr/papers/oopsla25prism.pdf" target="_blank" rel="noopener">pdf</a>]
+          </li>
+          <li>
+            <strong>Context-Aware and Data-Driven Feedback Generation for Programming Assignments.</strong><br>
+            <u>Dowon Song</u>, Woosuk Lee, and Hakjoo Oh.<br>
+            ESEC/FSE 2021: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering.
+            [<a href="https://prl.korea.ac.kr/papers/fse21.pdf" target="_blank" rel="noopener">pdf</a>]
+            [<a href="https://github.com/kupl/LearnML" target="_blank" rel="noopener">artifact</a>]
+          </li>
+          <li>
+            <strong>Automatic and Scalable Detection of Logical Errors in Functional Programming Assignments.</strong><br>
+            <u>Dowon Song</u>, Myungho Lee, and Hakjoo Oh.<br>
+            OOPSLA 2019: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications.
+            [<a href="https://prl.korea.ac.kr/papers/oopsla19.pdf" target="_blank" rel="noopener">pdf</a>]
+            [<a href="https://github.com/kupl/TestML" target="_blank" rel="noopener">artifact</a>]
+          </li>
+          <li>
+            <strong>Automatic Diagnosis and Correction of Logical Errors for Functional Programming Assignments.</strong><br>
+            Junho Lee, <u>Dowon Song</u>, Sunbeom So, and Hakjoo Oh.<br>
+            OOPSLA 2018: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications.
+            [<a href="https://dl.acm.org/citation.cfm?id=3276528" target="_blank" rel="noopener">publication</a>]
+            [<a href="https://prl.korea.ac.kr/papers/oopsla18-fixml.pdf" target="_blank" rel="noopener">pdf</a>]
+            [<a href="https://github.com/kupl/FixML" target="_blank" rel="noopener">artifact</a>]
+          </li>
+        </ul>
       </section>
 
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <p>
+          dowon_songATkorea.ac.kr (AT should be replaced with @)
+        </p>
+      </section>
     </main>
 
-    <footer id="contact" class="footer">
-      <div>
-        <h2>Contact</h2>
-        <p>Department of Computer Science and Engineering, Korea University</p>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:dowon_song@korea.ac.kr">dowon_song@korea.ac.kr</a>
-        <a href="https://prl.korea.ac.kr/" target="_blank" rel="noopener">Software Analysis Laboratory</a>
-      </div>
+    <footer>
+      © 2026 Dowon Song. Hosted by GitHub Pages.
     </footer>
   </body>
 </html>

@@ -14,9 +14,9 @@ This homepage was built as a faculty-application-oriented personal academic site
 
 ## Reflected Decisions
 
-- Used a concise academic CV structure inspired by the reference pages: profile summary, research interests, publications, experience and education, activities, and contact.
-- Kept the visual design restrained and readable rather than marketing-heavy, because faculty-search readers need to scan credentials quickly.
-- Placed a compact portrait and a research-position summary in the first viewport so the site immediately identifies the person and field without making the photo visually dominant.
+- Simplified the page toward the `ku-formal.github.io` style: compact header, text-first layout, bracket-style links, and minimal visual treatment.
+- Kept the design restrained and readable because faculty-search readers need to scan credentials quickly.
+- Replaced the large hero with a small floated portrait and a concise identity block.
 - Prioritized selected publications from the existing SAL page, preserving paper, artifact, and venue links where available.
 - Revised the research summary using the CV wording: automated software debugging with program analysis and program synthesis.
 - Added education dates and a CV link from the supplied CV.
