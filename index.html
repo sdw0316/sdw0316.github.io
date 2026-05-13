@@ -13,13 +13,16 @@
   </head>
   <body>
     <header class="site-header">
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-inner">
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">Dark</button>
+      </div>
     </header>
 
     <main>
@@ -115,5 +118,25 @@
     <footer>
       © 2026 Dowon Song. Hosted by GitHub Pages.
     </footer>
+    <script>
+      const themeToggle = document.querySelector(".theme-toggle");
+      const storedTheme = localStorage.getItem("theme");
+
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        themeToggle.textContent = theme === "dark" ? "Light" : "Dark";
+        themeToggle.setAttribute(
+          "aria-label",
+          theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+        );
+        localStorage.setItem("theme", theme);
+      }
+
+      setTheme(storedTheme === "dark" ? "dark" : "light");
+
+      themeToggle.addEventListener("click", () => {
+        setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+      });
+    </script>
   </body>
 </html>
