@@ -233,43 +233,6 @@ h3 {
   list-style: none;
 }
 
-.compact-list,
-.talk-list {
-  display: grid;
-  gap: 14px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.compact-list li,
-.talk-list li {
-  display: grid;
-  grid-template-columns: minmax(120px, 0.28fr) minmax(0, 1fr);
-  gap: 18px;
-  padding: 14px 0;
-  border-top: 1px solid var(--line);
-}
-
-.compact-list strong,
-.talk-list span {
-  color: var(--ink);
-  font-weight: 760;
-}
-
-.compact-list span,
-.talk-list p {
-  color: var(--muted);
-}
-
-.talk-list {
-  max-width: 980px;
-}
-
-.talk-list p {
-  margin-bottom: 0;
-}
-
 .publication {
   display: grid;
   grid-template-columns: 88px minmax(0, 1fr);
@@ -391,9 +354,7 @@ h3 {
     max-width: 190px;
   }
 
-  .publication,
-  .compact-list li,
-  .talk-list li {
+  .publication {
     grid-template-columns: 1fr;
     gap: 8px;
   }

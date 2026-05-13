@@ -19,7 +19,8 @@ This homepage was built as a faculty-application-oriented personal academic site
 - Placed a compact portrait and a research-position summary in the first viewport so the site immediately identifies the person and field without making the photo visually dominant.
 - Prioritized selected publications from the existing SAL page, preserving paper, artifact, and venue links where available.
 - Revised the research summary using the CV wording: automated software debugging with program analysis and program synthesis.
-- Added education dates, awards, selected talks, and a CV link from the supplied CV.
+- Added education dates and a CV link from the supplied CV.
+- Kept awards, talks, and other full-CV details inside the CV rather than duplicating them on the homepage.
 - Kept the top navigation minimal and removed the duplicate name from the left side of the header.
 
 ## Files Created
@@ -34,6 +35,6 @@ This homepage was built as a faculty-application-oriented personal academic site
 ## Recommended Next Content
 
 - Add dissertation title when finalized.
-- Add professional service, invited talks, teaching experience, awards, and mentoring.
+- Add professional service, invited talks, teaching experience, awards, and mentoring only when they become important enough to surface outside the CV.
 - Add Google Scholar, DBLP, GitHub, ORCID, and CV links if available.
 - Consider adding separate pages for publications and teaching once the content grows.
