@@ -21,7 +21,10 @@
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">Dark</button>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <span class="theme-option theme-light">Light</span>
+          <span class="theme-option theme-dark">Dark</span>
+        </button>
       </div>
     </header>
 
@@ -124,7 +127,6 @@
 
       function setTheme(theme) {
         document.documentElement.dataset.theme = theme;
-        themeToggle.textContent = theme === "dark" ? "Light" : "Dark";
         themeToggle.setAttribute(
           "aria-label",
           theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
