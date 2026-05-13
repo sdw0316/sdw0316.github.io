@@ -1,4 +1,8 @@
 .DS_Store
 Thumbs.db
 *.log
-
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz

@@ -45,18 +45,12 @@ a:hover {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 24px;
   padding: 18px clamp(20px, 5vw, 72px);
   background: rgba(251, 250, 248, 0.92);
   border-bottom: 1px solid rgba(23, 32, 42, 0.08);
   backdrop-filter: blur(16px);
-}
-
-.brand {
-  font-weight: 760;
-  letter-spacing: 0;
-  text-decoration: none;
 }
 
 .nav {
@@ -74,8 +68,8 @@ a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
-  gap: clamp(28px, 5vw, 72px);
+  grid-template-columns: minmax(180px, 0.45fr) minmax(0, 1.55fr);
+  gap: clamp(26px, 4vw, 56px);
   align-items: center;
   min-height: calc(100vh - 76px);
   padding: clamp(36px, 6vw, 84px) clamp(20px, 7vw, 96px);
@@ -84,8 +78,8 @@ a:hover {
 
 .hero-media {
   justify-self: center;
-  width: min(100%, 340px);
-  aspect-ratio: 4 / 5;
+  width: min(100%, 250px);
+  aspect-ratio: 3 / 4;
   background: var(--quiet);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -239,6 +233,43 @@ h3 {
   list-style: none;
 }
 
+.compact-list,
+.talk-list {
+  display: grid;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.compact-list li,
+.talk-list li {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.28fr) minmax(0, 1fr);
+  gap: 18px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.compact-list strong,
+.talk-list span {
+  color: var(--ink);
+  font-weight: 760;
+}
+
+.compact-list span,
+.talk-list p {
+  color: var(--muted);
+}
+
+.talk-list {
+  max-width: 980px;
+}
+
+.talk-list p {
+  margin-bottom: 0;
+}
+
 .publication {
   display: grid;
   grid-template-columns: 88px minmax(0, 1fr);
@@ -357,10 +388,12 @@ h3 {
 
   .hero-media {
     justify-self: start;
-    max-width: 260px;
+    max-width: 190px;
   }
 
-  .publication {
+  .publication,
+  .compact-list li,
+  .talk-list li {
     grid-template-columns: 1fr;
     gap: 8px;
   }
@@ -376,8 +409,7 @@ h3 {
 
 @media (max-width: 520px) {
   .nav {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
     gap: 10px 14px;
     font-size: 0.86rem;
   }

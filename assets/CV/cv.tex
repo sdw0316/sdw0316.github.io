@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+%\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{blindtext}
+\usepackage{url}
+
+\usepackage{enumitem}
+
+\usepackage{blindtext}
+\usepackage[normalem]{ulem}
+
+\usepackage{gensymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\usepackage{color}
+\usepackage{booktabs}
+
+
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
+\usepackage{kotex}
+%Skype information - include your Skype name for a link to add you on Skype
+%\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
+%\newcommand{\Absender}[1][\normalsize]{\Skype} 
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Dowon Song}}  \\
+\vspace{-2ex}
+\normalsize
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype. 
+
+\begin{center}
+\begin{tabular}{l l}
+ Korea University    & \hspace{1in}
+                       \href{mailto:dowon\_song@korea.ac.kr}{Email :
+                       dowon\_song@korea.ac.kr} \\
+ Software Analysis Laboratory  
+ % & \hspace{1in} {Homepage : \url{prl.korea.ac.kr/\~minseok}}   \\
+              %& \hspace{1in} Skype: \Absender  \\
+ & \hspace{1in} Phone: +82 10-3105-0454 \\
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent{\Large\bfseries Research Areas}\\[-0.5em]
+\rule{\textwidth}{0.4pt}
+My research focuses on automated software debugging by leveraging
+program analysis and program synthesis.
+
+\vspace{1.6em}
+\noindent{\Large\bfseries Educational Background}\\[-0.5em]
+\rule{\textwidth}{0.4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+Integrated M.S./Ph.D. in Computer Science, \textbf{Korea University} 
+& 2018.03 -- 2026.02 \\
+B.S. in Computer Science, \textbf{Korea University} 
+& 2014.03 -- 2018.02
+\end{tabular*}
+\renewcommand{\arraystretch}{1.0}
+
+\vspace{1.6em}
+\noindent{\Large\bfseries Awards}\\[-0.5em]
+\rule{\textwidth}{0.4pt}
+\begin{enumerate}
+  \item Outstanding Paper Award, Graduate School, Korea University, Aug 2021
+  \item Second Prize, Undergraduate Research Competition, 
+        Department of Computer Science, Korea University, May 2017
+\end{enumerate}
+
+\vspace{1.6em}
+\noindent{\Large\bfseries Publications}\\[-0.5em]
+\rule{\textwidth}{0.4pt}
+Publications in top-tier conferences in programming languages and software engineering (OOPSLA 2025, FSE 2021, OOPSLA 2019, and OOPSLA 2018).
+\begin{enumerate}    
+    \item{\underline {\textbf{Dowon Song}} and 
+      Hakjoo Oh. 
+      \textsl{Enhancing APR with PRISM: A Semantic-Based Approach to Overfitting Patch Detection.} 
+      \textbf{OOPSLA 2025}: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications}\\
+    \item{\underline {\textbf{Dowon Song}}, Woosuk Lee, and 
+      Hakjoo Oh. \textsl{Context-Aware and Data-Driven Feedback Generation for Programming Assignments.} \textbf{ESEC/FSE 2021}: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering}\\
+    \item{\underline {\textbf{Dowon Song}}, Myungho Lee, and 
+      Hakjoo Oh. \textsl{Automatic and Scalable Detection of Logical Errors in Functional Programming Assignments.} \textbf{OOPSLA 2019}: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications}\\
+    \item{Junho Lee, \underline{\textbf{Dowon Song}}, Sunbeom So, and
+      Hakjoo Oh. \textsl{Automatic Diagnosis and Correction of Logical Errors for Functional Programming Assignments.} \textbf{OOPSLA 2018}: ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications}\\
+\end{enumerate}
+
+\vspace{1.6em}
+\noindent{\Large\bfseries Talks}\\[-0.5em]
+\rule{\textwidth}{0.4pt}
+\begin{enumerate}
+  \item{Enhancing APR with PRISM: A Semantic-Based Approach to Overfitting Patch Detection. Paper presentation at OOPSLA 2025. Singapore. Oct 2025.}
+
+  \item{PRISM: 자동 수정 기술 성능 향상을 위한
+의미기반 과적합 패치 탐지. STAAR Summer Workshop. Seoul, Jul 2025.}
+	
+  \item{Context-Aware and Data-Driven Feedback Generation for Programming Assignments. STAAR Winter Workshop. Jeju, Feb 2022.}
+
+  \item{Context-Aware and Data-Driven Feedback Generation for Programming Assignments. Paper presentation at FSE 2021. Online, Aug 2021.}
+		
+	\item{Automatic and Scalable Detection of Logical Errors in Functional Programming Assignments. Invited talk at KCC 2020. Online, Jul 2020.} 
+  
+	\item{Automatic and Scalable Detection of Logical Errors in Functional Programming Assignments. Paper presentation at OOPSLA 2019. Athens, Oct 2019.} 
+	
+  \item{Automatic Grading and Feedback Generation for Functional Programming Assignments. SIGPL Summer 2019. PyeongChang, Aug 2019.}
+	
+  \item{Automatic Diagnosis and Correction of Logical Errors for Functional Programming Assignments. Invited talk at KCSE 2019. PyeongChang, Jan 2019.}
+  
+	\item{Automatic Diagnosis and Correction of Logical Errors for Functional Programming Assignments. Invited talk at PLATEAU 2018. Boston, Nov 2018.}
+	
+	% \item{Poster Session, SIGPL Summer Workshop 2017. Chuncheon,
+	% 	Korea.  August 2017.}
+\end{enumerate}
+
+\end{document}
+
