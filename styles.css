@@ -112,6 +112,14 @@ li {
   margin-bottom: 18px;
 }
 
+.paper-title {
+  font-weight: 650;
+}
+
+.paper-links {
+  margin-top: 2px;
+}
+
 footer {
   max-width: 920px;
   margin: 0 auto;
