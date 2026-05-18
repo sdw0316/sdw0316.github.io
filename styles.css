@@ -239,13 +239,14 @@ footer {
     grid-column: 1 / -1;
     grid-row: 2;
     display: none;
-    gap: 0;
-    margin-top: 4px;
-    padding: 6px 0;
+    gap: 2px;
+    width: min(220px, calc(100vw - 40px));
+    margin-top: 6px;
+    padding: 6px;
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 10px;
     background: var(--panel);
-    box-shadow: 0 10px 24px rgb(0 0 0 / 14%);
+    box-shadow: 0 12px 28px rgb(0 0 0 / 16%);
     transition: background-color 180ms ease, border-color 180ms ease;
   }
 
@@ -254,7 +255,23 @@ footer {
   }
 
   .site-header nav a {
-    padding: 8px 12px;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 7px;
+    color: var(--text);
+    line-height: 1.25;
+    text-decoration: none;
+  }
+
+  .site-header nav a + a {
+    border-top: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .site-header nav a:hover {
+    background: var(--bg);
+    text-decoration: none;
   }
 
   .theme-toggle {
