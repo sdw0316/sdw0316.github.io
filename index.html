@@ -14,7 +14,12 @@
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <nav aria-label="Primary navigation">
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
@@ -22,8 +27,7 @@
           <a href="#contact">Contact</a>
         </nav>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
-          <span class="theme-option theme-light">Light</span>
-          <span class="theme-option theme-dark">Dark</span>
+          <span class="theme-label">Theme</span>
         </button>
       </div>
     </header>
@@ -122,11 +126,14 @@
       © 2026 Dowon Song. Hosted by GitHub Pages.
     </footer>
     <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const primaryNav = document.querySelector("#primary-nav");
       const themeToggle = document.querySelector(".theme-toggle");
       const storedTheme = localStorage.getItem("theme");
 
       function setTheme(theme) {
         document.documentElement.dataset.theme = theme;
+        themeToggle.querySelector(".theme-label").textContent = theme === "dark" ? "Light" : "Dark";
         themeToggle.setAttribute(
           "aria-label",
           theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
@@ -138,6 +145,21 @@
 
       themeToggle.addEventListener("click", () => {
         setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+      });
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = document.body.classList.toggle("nav-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      });
+
+      primaryNav.addEventListener("click", (event) => {
+        if (event.target.tagName !== "A") {
+          return;
+        }
+        document.body.classList.remove("nav-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
       });
     </script>
   </body>
